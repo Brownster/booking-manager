@@ -1,0 +1,21 @@
+.protected-route__loading {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: var(--gray-50);
+}
+
+.protected-route__spinner {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 3px solid var(--gray-200);
+  border-top-color: var(--primary-500);
+  border-radius: 50%;
+  animation: protected-route-spin 0.8s linear infinite;
+}
+
+@keyframes protected-route-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

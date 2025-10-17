@@ -1,0 +1,136 @@
+.app-shell {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  background: var(--gray-50);
+}
+
+.app-shell__header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-4);
+  padding: var(--spacing-3) var(--spacing-6);
+  background: #fff;
+  border-bottom: 1px solid var(--gray-300);
+  box-shadow: var(--shadow-sm);
+}
+
+.app-shell__brand {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+}
+
+.app-shell__logo {
+  font-size: var(--text-xl);
+}
+
+.app-shell__brand-name {
+  display: block;
+  font-size: var(--text-lg);
+  font-weight: var(--font-semibold);
+}
+
+.app-shell__brand-subtitle {
+  display: block;
+  font-size: var(--text-xs);
+  color: var(--gray-700);
+}
+
+.app-shell__nav {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+}
+
+.app-shell__nav-link {
+  padding: var(--spacing-2) var(--spacing-3);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-sm);
+  color: var(--gray-700);
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.app-shell__nav-link:hover {
+  background: var(--gray-100);
+  color: var(--gray-900);
+}
+
+.app-shell__nav-link--active {
+  background: rgba(33, 150, 243, 0.12);
+  color: var(--primary-700);
+  font-weight: var(--font-semibold);
+}
+
+.app-shell__user {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+}
+
+.app-shell__identity {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+}
+
+.app-shell__avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: var(--primary-100);
+  color: var(--primary-700);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: var(--font-semibold);
+}
+
+.app-shell__user-meta {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.app-shell__user-name {
+  font-size: var(--text-sm);
+  font-weight: var(--font-semibold);
+}
+
+.app-shell__user-email {
+  font-size: var(--text-xs);
+  color: var(--gray-700);
+}
+
+.app-shell__content {
+  padding: var(--spacing-6);
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media (max-width: 960px) {
+  .app-shell__header {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: var(--spacing-4);
+  }
+
+  .app-shell__nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .app-shell__user {
+    flex-direction: column;
+  }
+
+  .app-shell__identity {
+    flex-direction: column;
+  }
+}

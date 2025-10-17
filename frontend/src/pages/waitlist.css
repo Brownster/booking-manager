@@ -1,0 +1,59 @@
+.waitlist-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.waitlist-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-2);
+}
+
+.waitlist-card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-2);
+}
+
+.waitlist-card__notes {
+  font-size: var(--text-sm);
+  color: var(--gray-700);
+  background: var(--gray-100);
+  padding: var(--spacing-2);
+  border-radius: var(--radius-sm);
+}
+
+.waitlist-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.waitlist-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+  font-size: var(--text-sm);
+}
+
+.waitlist-form__field select,
+.waitlist-form__field input,
+.waitlist-form__field textarea {
+  padding: var(--spacing-2);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--gray-300);
+  font-size: var(--text-sm);
+}
+
+.waitlist-form__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-3);
+}
+
+.waitlist-form__toggle {
+  flex-direction: row;
+  align-items: center;
+  gap: var(--spacing-2);
+}
